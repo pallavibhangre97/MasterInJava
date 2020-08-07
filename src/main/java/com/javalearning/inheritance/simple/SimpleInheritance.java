@@ -1,5 +1,4 @@
-package com.javalearning.inheritance;
-
+package com.javalearning.inheritance.simple;
 public class SimpleInheritance {
     public static void main(String[] args) {
         Programmer p=new Programmer();

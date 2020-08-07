@@ -1,4 +1,4 @@
-package com.javalearning.inheritance;
+package com.javalearning.inheritance.simple;
 
 public class Employee{
     int id=11;
