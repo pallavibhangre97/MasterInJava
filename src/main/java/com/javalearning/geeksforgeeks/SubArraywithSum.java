@@ -1,6 +1,6 @@
 package com.javalearning.geeksforgeeks;
 import java.util.*;
-public class ArrayFirst {
+public class SubArraywithSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();

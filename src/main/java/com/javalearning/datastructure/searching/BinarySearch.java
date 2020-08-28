@@ -1,4 +1,4 @@
-package com.javalearning.searching;
+package com.javalearning.datastructure.searching;
 
 import java.util.Scanner;
 

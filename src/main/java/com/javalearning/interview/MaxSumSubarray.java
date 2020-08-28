@@ -4,33 +4,33 @@ import java.util.*;
 
 public class MaxSumSubarray {
 
-    public static void maxSum(int arr[],int n){
-       /* time complexity O(n2)
+        public static void maxSum(int arr[],int n){
+           /* time complexity O(n2)
 
-       int maxSum=0;
-        for(int i=0;i<n;i++){
-            int sum=0;
-            for(int j=i;j<n;j++){
-                sum+=arr[j];
-                if(sum>maxSum)
-                    maxSum=sum;
+           int maxSum=0;
+            for(int i=0;i<n;i++){
+                int sum=0;
+                for(int j=i;j<n;j++){
+                    sum+=arr[j];
+                    if(sum>maxSum)
+                        maxSum=sum;
+                }
+            }*/
+            //below code is of time complexity O(1)
+            int max=arr[0],maxSum=arr[0];
+            for(int i=1;i<n;i++)
+            {
+                //maxSum=max(arr[i],maxSum+arr[i])
+               int res=maxSum+arr[i];
+               if(res>arr[i])
+                   maxSum=res;
+               else
+                   maxSum=arr[i];
+               if(maxSum>max)
+                   max=maxSum;
             }
-        }*/
-        //below code is of time complexity O(1)
-        int max=arr[0],maxSum=arr[0];
-        for(int i=1;i<n;i++)
-        {
-            //maxSum=max(arr[i],maxSum+arr[i])
-           int res=maxSum+arr[i];
-           if(res>arr[i])
-               maxSum=res;
-           else
-               maxSum=arr[i];
-           if(maxSum>max)
-               max=maxSum;
+            System.out.println(max);
         }
-        System.out.println(maxSum);
-    }
 
     public static void main(String args[]){
        Scanner sc=new Scanner(System.in);
